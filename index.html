@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Немного о преодолении верстки" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -10,10 +12,16 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header section-width">
+      <div class="header-section">
+        <h1 class="main-title">&lt;/html&gt;</h1>
+        <h2 class="header-title">закрывающий тег</h2>
+      </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +48,32 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main section-width">
+      <section>
+        <ul class="card-list">
+          <li class="card-list_item">
+            <article class="card">
+              <h2 class="card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+              <div class="card_label">
+                <img src="./images/card__image.png" alt="Машинка" class="card_image" />
+                <p class="card_image-title">&lt;/html&gt;</p>
+              </div>
+              <div class="card_text">
+                <p>Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+                <p>Место для ваших воспоминаний о начале обучения.</p>
+              </div>
+            </article>
+          </li>
+          <li class="card-list_item"></li>
+          <li class="card-list_item"></li>
+          <li class="card-list_item"></li>
+          <li class="card-list_item"></li>
+          <li class="card-list_item"></li>
+          <li class="card-list_item"></li>
+          <li class="card-list_item"></li>
+        </ul>
+      </section>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
