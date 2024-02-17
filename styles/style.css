@@ -80,6 +80,213 @@
 }
 
 .theme-menu__button {
+  display: grid;
+  grid-template-columns: 16px auto;
+  gap: 4px;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+.theme-menu__button:disabled {
+  color: var(--active-button-color);
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  animation: active-theme-button 0.5s infinite ease-in-out alternate;
+}
+
+.header-button__text {
+  grid-area: 1/2/2/3;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 100px;
+  margin-bottom: 103px;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.card {
+  background-color: var(--bg-color);
+}
+
+.card__cover {
+  position: relative;
+}
+
+.card-title {
+  border: 2px solid var(--main-color);
+  border-bottom: none;
+  padding: 5px 0 5px 10px;
+  font-weight: var(--font-bold);
+  font-size: inherit;
+}
+
+.card__image {
+  display: block;
+  width: var(--section-width);
+  border: 2px solid var(--main-color);
+  object-fit: cover;
+  object-position: center;
+}
+
+.watermark {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  opacity: 0.5;
+  color: var(--main-color);
+  font-family: var(--accent-text), sans-serif;
+  font-size: 14px;
+  text-shadow: 1px var(--bg-color);
+}
+
+@supports (
+  (text-stroke: 1px var(--bg-color)) or
+    (-webkit-text-stroke: 1px var(--bg-color))
+) {
+  .watermark {
+    text-shadow: none;
+    -webkit-text-stroke: 1px var(--bg-color);
+    text-stroke: 1px var(--bg-color);
+  }
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border: 2px solid var(--main-color);
+  border-top: none;
+  padding: 25px;
+}
+
+.like-buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 6px;
+}
+
+.heart {
+  width: 27px;
+  height: 24px;
+}
+
+.heart-icon {
+  display: block;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+}
+
+.like-button {
+  width: 130px;
+  height: 38px;
+}
+
+.button__text {
+  font-family: var(--accent-text);
+  font-size: 14px;
+  line-height: 90%;
+}
+
+.diskette__button {
+  gap: 8px;
+  padding: 16px 20px;
+}
+
+.diskette {
+  width: 21px;
+  height: 21px;
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  border: 2px solid var(--main-color);
+  padding: 30px;
+  color: var(--main-color);
+  font-family: var(--accent-text);
+  text-transform: uppercase;
+  background-color: var(--bg-color);
+}
+
+.dialog-title {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.dialog-diskette {
+  inline-size: 39px;
+  block-size: 39px;
+}
+
+.dialog-text {
+  inline-size: 234px;
+}
+
+.dialog-button {
+  width: 100%;
+  padding: 12.5px 0;
+}
+
+#dialog-id {
+  border: none;
+  padding: 0;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.5);
+  backdrop-filter: blur(7px);
+}
+
+.blur {
+  filter: blur(1px);
+}
+
+.brightness {
+  filter: brightness(30%);
+}
+
+.contrast {
+  filter: contrast(150%);
+}
+
+.grayscale {
+  filter: grayscale(80%);
+}
+
+.hue-rotate {
+  filter: hue-rotate(0.5turn);
+}
+
+.invert {
+  filter: invert(100%) sepia(0.5);
+}
+
+.saturate {
+  filter: saturate(390%);
+}
+
+.sepia {
+  filter: sepia(0.7);
 }

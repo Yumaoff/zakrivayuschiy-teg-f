@@ -5,6 +5,8 @@
   --accent-text: "PressStart2P", sans-serif;
   --main-color: #000;
   --bg-color: #fff;
+  --active-button-color: rgb(102, 102, 102, 0.6);
+  --heart-color: #f00;
   --font-regular: 400;
   --font-bold: 700;
   --bg-image: repeating-linear-gradient(
@@ -14,7 +16,7 @@
     ),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.1%, #1a1a1a);
-  --section-width: clamp(375px, 100%, 696px);
+  --section-width: clamp(375px, 100%, 700px);
   --main-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --header-title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }

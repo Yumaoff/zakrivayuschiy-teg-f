@@ -7,11 +7,11 @@
 >
   <style>
         @media (prefers-color-scheme: dark) {
-      :root {
-        fill: white;
+      path {
+        fill: #00CC14;
       }
     }
-  </style>
+    </style>
   <path d="M128 128H160V160H128V128Z" fill="black"/>
   <path d="M96 128V96H128V128H96Z" fill="black"/>
   <path d="M96 128V160H64V128H96Z" fill="black"/>
