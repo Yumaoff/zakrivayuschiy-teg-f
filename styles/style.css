@@ -34,8 +34,12 @@
 }
 
 @supports (font-variation-settings: normal) {
-  body {
-    font-family: "Inter", sans-serif;
+  .card-title {
+    font-variation-settings: var(--font-bold);
+  }
+
+  .page {
+    font-weight: var(--font-regular);
   }
 }
 
