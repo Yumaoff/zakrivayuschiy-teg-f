@@ -226,6 +226,7 @@
 }
 
 .watermark {
+  mix-blend-mode: hard-light;
   position: absolute;
   top: 25px;
   right: 25px;
