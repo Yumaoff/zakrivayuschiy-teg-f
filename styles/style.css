@@ -69,8 +69,8 @@
   gap: 20px;
 }
 
-.main-title {
-  font-size: var(--main-title-size);
+.main-logo {
+  font-size: var(--main-logo-size);
 }
 
 .header-title {
@@ -188,6 +188,8 @@
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
   margin-top: 100px;
   margin-bottom: 103px;
@@ -237,10 +239,7 @@
   text-shadow: 1px var(--bg-color);
 }
 
-@supports (
-  (text-stroke: 1px var(--bg-color)) or
-    (-webkit-text-stroke: 1px var(--bg-color))
-) {
+@supports ((text-stroke: 1px var(--bg-color)) or (-webkit-text-stroke: 1px var(--bg-color))) {
   .watermark {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--bg-color);
@@ -380,7 +379,7 @@ dialog::backdrop {
 
 @media (width <= 375px) {
   :root {
-    --main-title-size: clamp(2.5763rem, 0.586rem + 10.6344vw, 3.0644rem);
+    --main-logo-size: clamp(2.5763rem, 0.586rem + 10.6344vw, 3.0644rem);
     --section-width: 100%;
   }
 
@@ -388,7 +387,7 @@ dialog::backdrop {
     padding-block-start: 120px;
   }
 
-  .dialog-button .diskette {
+  .diskette {
     width: 28px;
     height: 28px;
   }
