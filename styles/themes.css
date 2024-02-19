@@ -8,8 +8,8 @@
 :root.theme-dark {
   --main-color: #00cc14;
   --bg-color: #000;
-  --font-regular: 465;
-  --font-bold: 785;
+  --font-regular: "wght" 465;
+  --font-bold: "wght" 785;
   --bg-image: repeating-linear-gradient(
       to right,
       #000 0 2px,
@@ -24,8 +24,8 @@
 :root.theme-light {
   --main-color: #000;
   --bg-color: #fff;
-  --font-regular: 400;
-  --font-bold: 700;
+  --font-regular: "wght" 400;
+  --font-bold: "wght" 700;
   --bg-image: repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
@@ -41,8 +41,8 @@
   :root {
     --main-color: #00cc14;
     --bg-color: #000;
-    --font-regular: 465;
-    --font-bold: 785;
+    --font-regular: "wght" 465;
+    --font-bold: "wght" 785;
     --bg-image: repeating-linear-gradient(
         to right,
         #000 0 2px,
