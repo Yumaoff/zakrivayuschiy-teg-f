@@ -30,12 +30,12 @@
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-variation-settings: var(--font-regular);
+  font-variation-settings: "wght" var(--font-regular);
 }
 
 @supports (font-variation-settings: normal) {
   .card-title {
-    font-variation-settings: var(--font-bold);
+    font-variation-settings: "wght" var(--font-bold);
   }
 
   .page {
